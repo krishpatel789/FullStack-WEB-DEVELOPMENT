@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TABLE >ARRANGEMENT OF DATA IN ROWS AND TABLES -->
+    <table border="1">
+        <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>GENDER</th>
+            <th>AGE</th>
+            
+        </thead>
+        <tbody>
+           <tr>
+            <td>123</td>
+            <td >bill</td>
+            <td>male</td>
+            <td>17</td>
+           </tr>
+           <tr >
+            <td>345</td>
+            <td>ram</td>
+            <td>male</td>
+            <td rowspan="3">18</td>
+           </tr>
+           <tr>
+            <td>456</td>
+            <td colspan="2">rani</td>
+            <!-- <td>female</td> -->
+            
+           </tr>
+           <tr>
+            <td>79</td>
+            <td>suresh</td>
+            <td>male</td>
+            
+           </tr>
+        </tbody>
+        <tfooter></tfooter>
+    </table><br>
+    <table border="1">
+        <thead>
+          <th>column1</th>
+          <th>column2</th>
+          <th>column3</th>
+         </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Row 1 Cell 1</td>
+                <td >Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+            </tr>
+            <tr>
+            
+                <td>Row 2 Cell 2</td>
+                <td>Row 2 Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">row 3 cell1</td>
+            
+            </tr>
+
+
+        </tbody>
+        <tfooter>
+            <tr><td colspan="2">total is</td>
+            <td>100</td></tr>
+        </tfooter>
+    </table>
+    <br>
+
+    <!--  use emmet plug to make task easier in table>thead>th*4+tbody>(tr>td*4)*4+tfooter>tr>td*2 -->
+    <!--USE THIS TYPE OF EMMET TEXT TO CREATE A TABLE MORE EASILY table>(thead>th*4)+(tbody>(tr>td*4)*4)+tfooter>tr>td*2 -->
+    <table border="1">
+        <thead>
+            <th>roll</th>
+            <th>studname</th>
+            <th>course</th>
+            <th>branch</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>ravi</td>
+                <td>CSE</td>
+                <td>ai</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>rani</td>
+                <td>cse</td>
+                <td>ds</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>sashi</td>
+                <td>dfs</td>
+                <td>forescis</td>
+            </tr>
+            <tr>
+                <td>107</td>
+                <td>raghu</td>
+                <td>mtech</td>
+                <td>phd</td>
+            </tr>
+        </tbody>
+        <tfooter>
+            <tr>
+                <td colspan="2">no of scholars</td>
+                <td colspan="2">25</td>
+            </tr>
+        </tfooter>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <thead>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Male</th>
+            <th>Female</th>
+            <th>Others</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan="4">Kerla</td>
+                <td rowspan="2">cochin</td>
+                <td>New street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Main Street</td>
+                <td>300 </td>
+                <td>288</td>
+                <td>2</td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td rowspan="2">Trivadam</td>
+                <td>guru Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>10</td>
+                <!-- <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td>TVK Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+                <!-- <td></td>
+                <td></td>
+                <td></td> -->
+            </tr>
+            <tr>
+                <td rowspan="4">Maharastra</td>
+                <td rowspan="2">mumbai</td>
+                <td>Krishna Street</td>
+                <td>700</td>
+                <td>850</td>
+                <td>1</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                
+                <td>Main Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>2</td>
+                
+            </tr>
+            <tr>
+                <td rowspan="2">Surath</td>
+                <td>New Street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>4</td>
+        </tbody>
+        <tfooter>
+<tr>
+    <td rowspan="2">2</td>
+    <td rowspan="2">Alaska</td>
+    <td rowspan="2">Aka Central</td>
+    <td>New Street</td>
+    <td>200</td>
+    <td>210</td>
+    <td>2</td>
+</tr>
+<tr>
+    <td>cross Street</td>
+    <td>1000</td>
+    <td>1050</td>
+    <td>10</td>
+    <!-- <td></td>
+    <td></td>
+    <td></td> -->
+</tr>
+
+        </tfooter>
+    </table>
+    <br>
+
+<!-- hr tag splits horizontlly into two in a table -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">shedule</th>
+                <th rowspan="2" colspan="2">Topic</th>
+            
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+            
+           
+           
+        </thead>
+        <tbody>
+            
+           
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 am</td>
+                <td rowspan="2">5:00 pm</td>
+                <td>Introduction to Xml</td>
+                
+            </tr>
+            <tr>
+                <td>Validity DTD and relax ng</td>
+                
+            </tr>
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00am</td>
+                <td>11:00am</td>
+                <td rowspan="3" >Xpath<hr>xsl transformation</td>
+            </tr>
+            <tr>
+                <td>11:00 am</td>
+                <td>2:00 pm</td>
+                <!-- <td rowspan="1.5">XSL Transformations</td> -->
+                
+            </tr>
+            <tr>
+                <td>2:00pm</td>
+                <td>5:00pm</td>
+                
+            </tr>
+            <tr>
+                <td >Wednesday</td>
+                <td>8:00 am</td>
+                <td>12:00 pm</td>
+                <td>XSL Formatting Objects</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="1">
+        <thead bgcolor="aqua">
+            <th>DAY/TIME</th>
+            <th>9:30am-10:40am</th>
+            <th>10:40am-11:40am</th>
+            <th>11:40am-11:50am</th>
+            <th>11:50am-12:50am</th>
+            <th>12:50pm-2:50pm</th>
+            <th>1:50pm-2:50pm</th>
+            <th>2:50pm-3:50pm</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MON</td>
+                <td>AI </td>
+                <td colspan="3">JAVALAB(2-316)</td>
+                <td ROWSPAN="6"> LUNCH    </td>
+                <td>DM </td>
+                <td>OOSE</td>
+              
+            </tr>
+            <tr>
+                <td>TUES</td>
+                <td>DM</td>
+                <td colspan="3">TCSS LAB(2-303/1-004)</td>
+                <td></td>
+                <td>JAVA</td>
+              
+            </tr>
+            <tr>
+                <td>WED</td>
+                <td>OOSE</td>
+                <td>DAA</td>
+                <td ROWSPAN="4">BREAK</td>
+                <td>JAVA</td>
+               <td COLSPAN="2">AI LAB(2-103)</td>
+               
+            </tr>
+            <tr>
+                <td>THUS</td>
+                <td>OS</td>
+                <td>AI</td>
+                <td>DM</td>
+                <td>DAA</td>
+                <td>LIBRARY</td>
+             
+            </tr>
+            <tr>
+                <td>FRI</td>
+                <td>AI</td>
+                <td>JAVA</td>
+                <td>DAA</td>
+                <td>OOSE</td>
+                <td>SPORTS</td>
+                
+            </tr>
+            <tfooter>
+                <tr>
+                    <td>SAT</td>
+                    <td>OS</td>
+                    <td>JAVA</td>
+                    <td>DAA</td>
+                    <td>DM</td>
+                    <td>AI</td>
+                </tr>
+            </tfooter>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
