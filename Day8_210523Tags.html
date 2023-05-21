@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+    <fieldset>
+        <!-- audiofile only -->
+        <label for="audiofile">Attach the audio file:</label>
+        <input type="file" id="audiofile" name="audio" accept="audio/*" multiple >
+        <br><br>
+        <!-- video multiple files -->
+        <label for="video">Attach video file</label>
+        <input type="file" id="video" accept="video/*" multiple>
+       <br><br>
+       <!-- Accepts only image files only -->
+        <label for="image">Attach image files</label>
+        <input type="file" id="image" accept="image/*" multiple>
+        <br><br>
+        <!-- should accept only pdf file and msexcel type file use application/pdf -->
+        <label for="pdffile">Attach pdf file </label>
+        <input type="file" id="pdffile" accept="application/pdf ,application/vnd.ms-excel ">
+        <br><br>
+        <!-- should accept only word files -->
+        <label for="msword" >Attach msword file</label>
+        <input type="file" id="msword" accept="application/msword">
+        <br><br>
+        <!-- checked attribute -->
+        <label for="">Select Gender:</label>
+        <label for="1">Male</label>
+        <input type="checkbox" id="1" name="1" value="male" checked>
+        <label for="2">Female</label>
+        <input type="checkbox" id="2" name="2" value="female">
+        <label for="3">Other</label>
+        <input type="checkbox"  id="3"  name="3" value="Other">
+        <br><br>
+        <label for="username">Enter Username:</label>
+        <input type="text" id="username" placeholder="USERNAME HERE" autofocus >
+        <br><br>
+        <label for="username1">Enter Username:</label>
+        <input type="text" id="username1" placeholder="USERNAME HERE" disabled >
+        <br><br><br>
+        <!-- specifying max min quantity  -->
+        <label for="max">Select date of birth :</label>
+        <input type="date" max="2000-06-06" id="max">
+        <br><br>
+        <label for="min">Select date of birth</label>
+        <input type="date" id="min" min="2003-06-06" name="datemax" value="date" >
+        <br><br>
+        <label for="quantity">Select a number</label>
+        <input type="number" id="quantity" value="" name="quantity" min="10" max="20" >
+        <br><br>
+        <label for="maxlength">Enter text</label>
+        <input type="text" id="maxlength" maxlength="4" >
+
+            
+    
+    
+    </fieldset >
+        
+
+    </form>
+    
+</body>
+</html>
